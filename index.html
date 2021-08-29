@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Cadastro de Devs</h1>
+        <p>Complete suas informações</p>
+    </div>
+    <br>
+    <form>
+        <fieldset>
+            <!--Usada como se fosse pra  um container
+             do formulário-->
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" name="Sobrenome" id="Sobrenome">
+            </div>
+        </fieldset>
+        <div>
+            <!--Divi pra fora do fieldset pra fazer
+             um e-mail por fora do contianer-->
+            <label>Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <!--3 opções em forma de bolinha-->
+            <label>De qual lado da aplicação você desenvolve</label>
+            <lebal>
+                <input type="radio" name="devweb" value="frontend" checked>front-end
+                <!--O "radius" é que faz ficar opção 
+                em forma de bolinha-->
+
+                <!--"Checked" serve pra deixar 
+                o primeiro já selecionado -->
+            </lebal>
+            <lebal>
+                <input type="radio" name="devweb" value="backend">bacck-end
+
+            </lebal>
+            <lebal>
+                <input type="radio" name="devweb" value="fullstack">fullstack
+            </lebal>
+        </div>
+        <div>
+            <label>Senioridade</label>
+            <!--"Select deixa a opção em seleção. 
+            Caxinha que abre as opções"-->
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <!--Esse option serve pra deixar o primeiro selecionado-->
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
